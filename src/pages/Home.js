@@ -1,5 +1,5 @@
-import React from 'react';
-import { connect } from 'react-redux';
+import React from 'react'
+import { connect } from 'react-redux'
 
 function HomePage(props) {
   return (
@@ -11,12 +11,12 @@ function HomePage(props) {
       <hr />
       <p> {props.message} </p>
     </div>
-  );
+  )
 }
 
 HomePage.propTypes = {
   message: React.PropTypes.string
-};
+}
 
 
 /**
@@ -25,4 +25,4 @@ HomePage.propTypes = {
  * they only need a slice of the state.
  */
 
-export default connect(state => state)(HomePage);
+export default connect(state => state)(HomePage)

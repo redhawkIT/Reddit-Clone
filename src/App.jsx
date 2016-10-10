@@ -1,11 +1,11 @@
-import React from 'react';
+import React from 'react'
 import { Provider } from 'react-redux'
-import { Router, Route, IndexRoute, browserHistory } from 'react-router';
+import { Router, Route, IndexRoute, browserHistory } from 'react-router'
 
-import Layout from './components/Layout';
-import Counter from './components/Counter';
+import Layout from './components/Layout'
+import Counter from './components/Counter'
 
-import HomePage from './pages/Home';
+import HomePage from './pages/Home'
 
 
 /**
@@ -15,7 +15,7 @@ import HomePage from './pages/Home';
  *
  * You may see some warnings in the console like:
  *
- *     "You cannot change <Router routes>; it will be ignored"
+ *     "You cannot change <Router routes> it will be ignored"
  *
  * You can just ignore those, it's a side affect of hot reloading
  * with react-router. You may also see warnings logged by React about
@@ -23,7 +23,7 @@ import HomePage from './pages/Home';
  *
  * 		"Warning: Unknown prop `noGutter` on <div> tag"
  *
- * You can also ignore those; this warning was introduced in React 15.2
+ * You can also ignore those this warning was introduced in React 15.2
  * and the UI library used here (material-ui) has not been updated to
  * address these warnings yet. Just make sure that you do not cause any
  * additional instances of these warnings.
@@ -37,5 +37,5 @@ export default function App() {
         <Route path='counter' component={Counter} />
       </Route>
     </Router>
-  );
+  )
 }

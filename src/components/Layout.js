@@ -1,10 +1,10 @@
-import React from 'react';
-import { Toolbar, ToolbarTitle } from 'material-ui/Toolbar';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import { Provider } from 'react-redux';
-import configureStore from '../store/configureStore';
+import React from 'react'
+import { Toolbar, ToolbarTitle } from 'material-ui/Toolbar'
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
+import { Provider } from 'react-redux'
+import configureStore from '../store/configureStore'
 
-const store = configureStore();
+const store = configureStore()
 
 /**
  * The provided Redux store uses the `redux-logger` middleware.
@@ -17,7 +17,7 @@ const store = configureStore();
  * @TODO Please remove the test action below.
  */
 
-store.dispatch({ type: 'TEST_ACTION' });
+store.dispatch({ type: 'TEST_ACTION' })
 
 export default function Layout({ children }) {
   return (
@@ -31,9 +31,9 @@ export default function Layout({ children }) {
         </div>
       </Provider>
     </MuiThemeProvider>
-  );
+  )
 }
 
 Layout.propTypes = {
   children: React.PropTypes.node
-};
+}
