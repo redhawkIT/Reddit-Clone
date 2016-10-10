@@ -1,4 +1,5 @@
 import React from 'react';
+import { Provider } from 'react-redux'
 import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 
 import Layout from './components/Layout';
