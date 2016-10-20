@@ -19,6 +19,7 @@ Reddit uses a number of open source projects to work properly:
 * [React Router](https://github.com/ReactTraining/react-router) - A complete routing library for React
 * [Babel](https://babeljs.io/) - Compiles ES6 to ES5. Enjoy the new version of JavaScript today.
 * [react-redux](https://github.com/reactjs/react-redux/tree/master/docs) - Official React bindings for Redux
+* [redux-promise](https://github.com/acdlite/redux-promise) - FSA-compliant promise middleware for Redux.
 * [Material UI](http://www.material-ui.com/) - Google's material design UI components built with React.
 * [Reddit API](https://www.reddit.com/dev/api/)
 * [Node.js] - Evented I/O for the backend
