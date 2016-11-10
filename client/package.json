@@ -5,11 +5,7 @@
   "proxy": "http://localhost:3100/",
   "devDependencies": {
     "react-scripts": "^0.6.0",
-    "redux-devtools": "^3.3.1",
-    "redux-devtools-dock-monitor": "^1.1.1",
-    "redux-devtools-log-monitor": "^1.0.11",
-    "redux-logger": "^2.6.1",
-    "react-tap-event-plugin": "^1.0.0"
+    "redux-devtools": "^3.3.1"
   },
   "dependencies": {
     "axios": "^0.15.2",

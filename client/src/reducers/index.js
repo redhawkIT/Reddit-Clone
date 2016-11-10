@@ -1,4 +1,5 @@
 import {combineReducers} from 'redux'
+import {REQUEST_POSTS, RECEIVE_POSTS, SELECT_SUBREDDIT, INVALIDATE_SUBREDDIT} from '../constants/ActionTypes'
 
 /*
   Things you should never do inside a reducer
@@ -9,6 +10,7 @@ import {combineReducers} from 'redux'
 
 // Combines multiple reducers into a single reducing function with each reducer as a
 // key/value pair. Can then be passed to createStore().
+
 
 const rootReducer = combineReducers(a => a)
 

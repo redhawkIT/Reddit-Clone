@@ -13,7 +13,7 @@ const SlideDrawer = ({handleToggle, open, setTitle}) => (
       width={300}
       docked={false}
       open={open}
-      onRequestChange={e => handleToggle(e)}>
+      onRequestChange={handleToggle}>
 
       {/* <div className='subHeader'>Type a subreddit name</div> */}
       <SubRedditSearchBar className='subHeader'/>
