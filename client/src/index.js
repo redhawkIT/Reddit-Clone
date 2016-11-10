@@ -24,6 +24,4 @@ const Root = () => (
   </MuiThemeProvider>
 )
 
-render(
-  <Root/>, document.getElementById('root')
-)
+render(<Root/>, document.getElementById('root'))
