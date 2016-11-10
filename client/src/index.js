@@ -5,19 +5,22 @@ import {Provider} from 'react-redux'
 import {createStore} from 'redux'
 
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
+import theme from './material_ui_raw_theme_file'
 import injectTapEventPlugin from 'react-tap-event-plugin'
 
-// import reducer from './reducers
+import reducer from './reducers'
 import routes from './routes'
 
 import './index.css'
 
 injectTapEventPlugin()
 
-const store = createStore(e => e, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
+const reduxDevTools = window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+
+const store = createStore(reducer, reduxDevTools)
 
 const Root = () => (
-  <MuiThemeProvider>
+  <MuiThemeProvider muiTheme={theme}>
     <Provider store={store}>
       <Router history={browserHistory} routes={routes} />
     </Provider>

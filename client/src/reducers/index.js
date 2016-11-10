@@ -10,6 +10,6 @@ import {combineReducers} from 'redux'
 // Combines multiple reducers into a single reducing function with each reducer as a
 // key/value pair. Can then be passed to createStore().
 
-const rootReducer = combineReducers()
+const rootReducer = combineReducers(a => a)
 
 export default rootReducer
