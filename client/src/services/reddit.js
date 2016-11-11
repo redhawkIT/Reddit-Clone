@@ -2,9 +2,6 @@ import axios from 'axios'
 import Qs from 'qs'
 
 
-// axios('https://www.reddit.com/user/kn0thing/about.json').then(res => console.log(res))
-
-
 let get = function(path, query) {
   if (query) {
     query = `?${Qs.stringify(query)}`
@@ -13,8 +10,8 @@ let get = function(path, query) {
     query = ''
   }
 
-  return axios(`https://reddit.com/${path}.json${query}`).then(res => res)
-
+  return axios(`https://reddit.com/${path}.json${query}`)
+    .then(res => res)
 
 }
 

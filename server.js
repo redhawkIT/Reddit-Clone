@@ -21,7 +21,11 @@ app.use(function(req, res, next) {
 })
 
 
-app.post('/reddit', (req, res) => {
+
+
+app.post('/subreddits', (req, res) => {
+  axios(`https://reddit.com/subreddits/default.json`)
+      .then(res => console.log(res))
   console.log(req.body)
 })
 
